@@ -1,0 +1,12 @@
+spring:
+    application:
+        name: redis-lock
+    redis:
+        host: redis.daheng.co
+        port: 6379
+        jedis:
+            pool:
+                max-idle: 6
+                max-active: 32
+                max-wait: 100
+                min-idle: 4
